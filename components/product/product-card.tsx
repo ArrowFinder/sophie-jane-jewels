@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import { Image } from "@/components/ui/image";
 import type { Product } from "@/lib/shopify/types";
 import { formatMoney, cn } from "@/lib/utils";
 import { isSold, pieceHref } from "@/lib/shopify/archive";

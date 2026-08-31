@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import { Image } from "@/components/ui/image";
 
 const shops = [
   { title: "Rings", href: "/collections/rings", image: "/photos/shop-rings.png" },

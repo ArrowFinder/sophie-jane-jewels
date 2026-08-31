@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import { Image } from "@/components/ui/image";
 import { Container } from "@/components/ui/container";
 import { InquiryForm } from "@/components/find-your-piece/inquiry-form";
 import { BreadcrumbJsonLd } from "@/components/seo/json-ld";

@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { Image } from "@/components/ui/image";
 import { ButtonLink } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 

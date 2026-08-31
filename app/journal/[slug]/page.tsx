@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
+import { Image } from "@/components/ui/image";
 import { notFound } from "next/navigation";
 import { Container } from "@/components/ui/container";
 import { ProductGrid } from "@/components/product/product-grid";

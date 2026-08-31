@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Cormorant_Garamond, Mulish, Courier_Prime } from "next/font/google";
 import "./globals.css";
 import { siteConfig } from "@/lib/site";
+import { assetPath } from "@/lib/assets";
 import { CartProvider } from "@/components/cart/cart-provider";
 import { CartDrawer } from "@/components/cart/cart-drawer";
 import { Header } from "@/components/layout/header";
@@ -65,7 +66,7 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     images: [
       {
-        url: "/photos/hero-desert.png",
+        url: assetPath("/photos/hero-desert.png"),
         width: 1600,
         height: 900,
         alt: `${siteConfig.name} — Fine Antique & Estate Jewelry`,
@@ -76,7 +77,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${siteConfig.name} — ${siteConfig.tagline}`,
     description: siteConfig.description,
-    images: ["/photos/hero-desert.png"],
+    images: [assetPath("/photos/hero-desert.png")],
   },
   robots: {
     index: true,
@@ -84,8 +85,8 @@ export const metadata: Metadata = {
     googleBot: { index: true, follow: true, "max-image-preview": "large" },
   },
   icons: {
-    icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
-    apple: "/icon.svg",
+    icon: [{ url: assetPath("/icon.svg"), type: "image/svg+xml" }],
+    apple: assetPath("/icon.svg"),
   },
 };
 

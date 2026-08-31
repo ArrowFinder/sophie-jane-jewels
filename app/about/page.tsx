@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import { Image } from "@/components/ui/image";
 import { Container } from "@/components/ui/container";
 import { EditorialSplit } from "@/components/sections/editorial-split";
 import { ConciergeCta } from "@/components/sections/concierge-cta";

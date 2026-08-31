@@ -7,6 +7,7 @@ import { ButtonLink } from "@/components/ui/button";
 import { BreadcrumbJsonLd, JsonLd } from "@/components/seo/json-ld";
 import { getArchiveProducts } from "@/lib/shopify";
 import { siteConfig } from "@/lib/site";
+import { assetPath } from "@/lib/assets";
 import { archiveIndexDescription, archiveIndexTitle } from "@/lib/seo";
 import { Pagination } from "@/components/ui/pagination";
 import { PAGE_SIZE } from "@/lib/shopify/handles";
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
     title: archiveIndexTitle(),
     description: archiveIndexDescription(),
     url: `${siteConfig.url}/archive`,
-    images: [{ url: "/photos/lifestyle-marble.png", alt: "Sophie Jane Jewels archive" }],
+    images: [{ url: assetPath("/photos/lifestyle-marble.png"), alt: "Sophie Jane Jewels archive" }],
   },
 };
 
