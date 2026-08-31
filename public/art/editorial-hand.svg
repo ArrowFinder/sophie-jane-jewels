@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1500" viewBox="0 0 1200 1500" role="img">
+  <defs>
+  <linearGradient id="bg-editorialhand" gradientTransform="rotate(150)">
+    <stop offset="0%" stop-color="#f2e3d6"/>
+    <stop offset="52%" stop-color="#e7c4c4"/>
+    <stop offset="100%" stop-color="#d79c9d"/>
+  </linearGradient>
+  <radialGradient id="light-editorialhand" cx="30%" cy="22%" r="85%">
+    <stop offset="0%" stop-color="#ffffff" stop-opacity="0.55"/>
+    <stop offset="55%" stop-color="#ffffff" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="grain-editorialhand">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer><feFuncA type="linear" slope="0.06"/></feComponentTransfer>
+    <feComposite operator="over" in2="SourceGraphic"/>
+  </filter></defs>
+  <rect width="1200" height="1500" fill="url(#bg-editorialhand)"/>
+  <rect width="1200" height="1500" fill="url(#light-editorialhand)"/>
+  
+    <g stroke="#3a2a20" stroke-opacity="0.5" fill="none" stroke-width="14.4">
+      <path d="M 312 630 L 600 390 L 888 630 L 600 1134 Z"/>
+      <path d="M 312 630 L 888 630"/>
+      <path d="M 600 390 L 600 630"/>
+      <path d="M 456 630 L 600 1134"/>
+      <path d="M 744 630 L 600 1134"/>
+    </g>
+  <rect width="1200" height="1500" filter="url(#grain-editorialhand)" opacity="0.55"/>
+</svg>

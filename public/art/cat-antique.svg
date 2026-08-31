@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1250" viewBox="0 0 1000 1250" role="img">
+  <defs>
+  <linearGradient id="bg-catantique" gradientTransform="rotate(150)">
+    <stop offset="0%" stop-color="#c98a72"/>
+    <stop offset="52%" stop-color="#8a2e2f"/>
+    <stop offset="100%" stop-color="#4f141b"/>
+  </linearGradient>
+  <radialGradient id="light-catantique" cx="30%" cy="22%" r="85%">
+    <stop offset="0%" stop-color="#ffffff" stop-opacity="0.55"/>
+    <stop offset="55%" stop-color="#ffffff" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="grain-catantique">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer><feFuncA type="linear" slope="0.06"/></feComponentTransfer>
+    <feComposite operator="over" in2="SourceGraphic"/>
+  </filter></defs>
+  <rect width="1000" height="1250" fill="url(#bg-catantique)"/>
+  <rect width="1000" height="1250" fill="url(#light-catantique)"/>
+  
+    <g stroke="#3a2a20" stroke-opacity="0.5" fill="none" stroke-width="12">
+      <path d="M 260 525 L 500 325 L 740 525 L 500 945 Z"/>
+      <path d="M 260 525 L 740 525"/>
+      <path d="M 500 325 L 500 525"/>
+      <path d="M 380 525 L 500 945"/>
+      <path d="M 620 525 L 500 945"/>
+    </g>
+  <rect width="1000" height="1250" filter="url(#grain-catantique)" opacity="0.55"/>
+</svg>

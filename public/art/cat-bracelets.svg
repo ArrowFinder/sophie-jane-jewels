@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1250" viewBox="0 0 1000 1250" role="img">
+  <defs>
+  <linearGradient id="bg-catbracelets" gradientTransform="rotate(150)">
+    <stop offset="0%" stop-color="#e7e2cf"/>
+    <stop offset="52%" stop-color="#cbb98f"/>
+    <stop offset="100%" stop-color="#9a8a63"/>
+  </linearGradient>
+  <radialGradient id="light-catbracelets" cx="30%" cy="22%" r="85%">
+    <stop offset="0%" stop-color="#ffffff" stop-opacity="0.55"/>
+    <stop offset="55%" stop-color="#ffffff" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="grain-catbracelets">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer><feFuncA type="linear" slope="0.06"/></feComponentTransfer>
+    <feComposite operator="over" in2="SourceGraphic"/>
+  </filter></defs>
+  <rect width="1000" height="1250" fill="url(#bg-catbracelets)"/>
+  <rect width="1000" height="1250" fill="url(#light-catbracelets)"/>
+  
+    <g stroke="#3a2a20" stroke-opacity="0.5" fill="none" stroke-width="12">
+      <ellipse cx="500" cy="625" rx="340" ry="200"/>
+      <ellipse cx="500" cy="625" rx="280" ry="150"/>
+      <circle cx="160" cy="625" r="30"/>
+      <circle cx="840" cy="625" r="30"/>
+    </g>
+  <rect width="1000" height="1250" filter="url(#grain-catbracelets)" opacity="0.55"/>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img">
+  <defs>
+  <linearGradient id="bg-storywide" gradientTransform="rotate(115)">
+    <stop offset="0%" stop-color="#e9c6b0"/>
+    <stop offset="52%" stop-color="#d46a31"/>
+    <stop offset="100%" stop-color="#691c25"/>
+  </linearGradient>
+  <radialGradient id="light-storywide" cx="70%" cy="20%" r="85%">
+    <stop offset="0%" stop-color="#ffffff" stop-opacity="0.55"/>
+    <stop offset="55%" stop-color="#ffffff" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="grain-storywide">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer><feFuncA type="linear" slope="0.06"/></feComponentTransfer>
+    <feComposite operator="over" in2="SourceGraphic"/>
+  </filter></defs>
+  <rect width="1600" height="900" fill="url(#bg-storywide)"/>
+  <rect width="1600" height="900" fill="url(#light-storywide)"/>
+  
+  <rect width="1600" height="900" filter="url(#grain-storywide)" opacity="0.55"/>
+</svg>

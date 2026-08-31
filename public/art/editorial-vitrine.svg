@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img">
+  <defs>
+  <linearGradient id="bg-editorialvitrine" gradientTransform="rotate(135)">
+    <stop offset="0%" stop-color="#e7e2cf"/>
+    <stop offset="52%" stop-color="#cbb98f"/>
+    <stop offset="100%" stop-color="#9a8a63"/>
+  </linearGradient>
+  <radialGradient id="light-editorialvitrine" cx="30%" cy="22%" r="85%">
+    <stop offset="0%" stop-color="#ffffff" stop-opacity="0.55"/>
+    <stop offset="55%" stop-color="#ffffff" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="grain-editorialvitrine">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer><feFuncA type="linear" slope="0.06"/></feComponentTransfer>
+    <feComposite operator="over" in2="SourceGraphic"/>
+  </filter></defs>
+  <rect width="1200" height="900" fill="url(#bg-editorialvitrine)"/>
+  <rect width="1200" height="900" fill="url(#light-editorialvitrine)"/>
+  
+    <g stroke="#3a2a20" stroke-opacity="0.5" fill="none" stroke-width="10.8">
+      <path d="M 348 180 Q 600 342 852 180"/>
+      <circle cx="600" cy="522" r="180"/>
+      <circle cx="600" cy="522" r="90"/>
+      <path d="M 600 342 L 600 342"/>
+    </g>
+  <rect width="1200" height="900" filter="url(#grain-editorialvitrine)" opacity="0.55"/>
+</svg>

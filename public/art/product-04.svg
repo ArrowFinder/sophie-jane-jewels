@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1375" viewBox="0 0 1100 1375" role="img">
+  <defs>
+  <linearGradient id="bg-product04" gradientTransform="rotate(172)">
+    <stop offset="0%" stop-color="#e7e2cf"/>
+    <stop offset="52%" stop-color="#cbb98f"/>
+    <stop offset="100%" stop-color="#9a8a63"/>
+  </linearGradient>
+  <radialGradient id="light-product04" cx="28%" cy="20%" r="85%">
+    <stop offset="0%" stop-color="#ffffff" stop-opacity="0.55"/>
+    <stop offset="55%" stop-color="#ffffff" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="grain-product04">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer><feFuncA type="linear" slope="0.06"/></feComponentTransfer>
+    <feComposite operator="over" in2="SourceGraphic"/>
+  </filter></defs>
+  <rect width="1100" height="1375" fill="url(#bg-product04)"/>
+  <rect width="1100" height="1375" fill="url(#light-product04)"/>
+  
+    <g stroke="#3a2a20" stroke-opacity="0.5" fill="none" stroke-width="13.200000000000001">
+      <path d="M 286 577.5 L 550 357.5 L 814 577.5 L 550 1039.5 Z"/>
+      <path d="M 286 577.5 L 814 577.5"/>
+      <path d="M 550 357.5 L 550 577.5"/>
+      <path d="M 418 577.5 L 550 1039.5"/>
+      <path d="M 682 577.5 L 550 1039.5"/>
+    </g>
+  <rect width="1100" height="1375" filter="url(#grain-product04)" opacity="0.55"/>
+</svg>
