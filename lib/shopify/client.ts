@@ -6,29 +6,40 @@
 
 const API_VERSION = "2025-07";
 
+function storeDomain(): string {
+  return (
+    process.env.NEXT_PUBLIC_SHOPIFY_STORE_DOMAIN ||
+    process.env.SHOPIFY_STORE_DOMAIN ||
+    ""
+  ).replace(/^https?:\/\//, "").replace(/\/$/, "");
+}
+
+function publicToken(): string {
+  return (
+    process.env.NEXT_PUBLIC_SHOPIFY_STOREFRONT_ACCESS_TOKEN ||
+    process.env.SHOPIFY_STOREFRONT_ACCESS_TOKEN ||
+    ""
+  );
+}
+
 function storefrontHeaders(): Record<string, string> {
   const privateToken = process.env.SHOPIFY_STOREFRONT_PRIVATE_TOKEN;
-  const publicToken = process.env.SHOPIFY_STOREFRONT_ACCESS_TOKEN;
+  const token = publicToken();
   if (privateToken) {
     return { "Shopify-Storefront-Private-Token": privateToken };
   }
-  if (publicToken) {
-    return { "X-Shopify-Storefront-Access-Token": publicToken };
+  if (token) {
+    return { "X-Shopify-Storefront-Access-Token": token };
   }
   return {};
 }
 
 export function isShopifyConfigured(): boolean {
-  return Boolean(
-    process.env.SHOPIFY_STORE_DOMAIN &&
-      (process.env.SHOPIFY_STOREFRONT_PRIVATE_TOKEN ||
-        process.env.SHOPIFY_STOREFRONT_ACCESS_TOKEN),
-  );
+  return Boolean(storeDomain() && (process.env.SHOPIFY_STOREFRONT_PRIVATE_TOKEN || publicToken()));
 }
 
 function endpoint(): string {
-  const domain = process.env.SHOPIFY_STORE_DOMAIN!.replace(/^https?:\/\//, "").replace(/\/$/, "");
-  return `https://${domain}/api/${API_VERSION}/graphql.json`;
+  return `https://${storeDomain()}/api/${API_VERSION}/graphql.json`;
 }
 
 type GraphQLResponse<T> = {
@@ -55,7 +66,7 @@ export async function shopifyFetch<T>({
     },
     body: JSON.stringify({ query, variables }),
     cache,
-    ...(tags ? { next: { tags } } : {}),
+    ...(typeof window === "undefined" && tags ? { next: { tags } } : {}),
   });
 
   if (!res.ok) {

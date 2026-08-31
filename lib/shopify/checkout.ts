@@ -1,5 +1,3 @@
-"use server";
-
 import { isShopifyConfigured, shopifyFetch } from "./client";
 import { CREATE_CART } from "./queries";
 

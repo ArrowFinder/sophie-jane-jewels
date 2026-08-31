@@ -13,6 +13,7 @@ import { PAGE_SIZE } from "@/lib/shopify/handles";
 import { cn } from "@/lib/utils";
 
 export const revalidate = 3600;
+export const dynamic = "force-static";
 
 export const metadata: Metadata = {
   title: archiveIndexTitle(),

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import Link from "next/link";
 import { notFound, permanentRedirect } from "next/navigation";
 import { Container } from "@/components/ui/container";
@@ -14,6 +15,7 @@ import { Pagination } from "@/components/ui/pagination";
 import { siteConfig } from "@/lib/site";
 
 export const revalidate = 3600;
+export const dynamic = "force-static";
 
 type Params = { handle: string };
 type Search = { sort?: string; page?: string };
@@ -138,7 +140,9 @@ export default async function CollectionPage({
 
       <section className="py-10 lg:py-14">
         <Container>
-          <CollectionToolbar count={products.length} sort={sort} />
+          <Suspense fallback={null}>
+            <CollectionToolbar count={products.length} sort={sort} />
+          </Suspense>
 
           {paged.length > 0 ? (
             <div className="pt-10">

@@ -9,6 +9,8 @@ import { getArticlesByTopic } from "@/lib/journal";
 import { ArrowRight } from "@/components/ui/icons";
 import { cn } from "@/lib/utils";
 
+export const dynamic = "force-static";
+
 export const metadata: Metadata = {
   title: "The Journal — Antique Jewelry Guides & Stories",
   description:

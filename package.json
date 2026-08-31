@@ -2,6 +2,7 @@
   "name": "sophie-jane-jewels",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://arrowfinder.github.io/sophie-jane-jewels/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

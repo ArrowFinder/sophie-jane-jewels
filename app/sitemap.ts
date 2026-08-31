@@ -4,6 +4,8 @@ import { ARCHIVE_HANDLE } from "@/lib/shopify/archive";
 import { articles } from "@/lib/journal";
 import { siteConfig } from "@/lib/site";
 
+export const dynamic = "force-static";
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const base = siteConfig.url;
 

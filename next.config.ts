@@ -1,7 +1,17 @@
 import type { NextConfig } from "next";
 
+const isGithubPages = process.env.GITHUB_PAGES === "true";
+
 const nextConfig: NextConfig = {
+  ...(isGithubPages
+    ? {
+        output: "export" as const,
+        basePath: "/sophie-jane-jewels",
+        trailingSlash: true,
+      }
+    : {}),
   images: {
+    unoptimized: isGithubPages,
     // Local art placeholders are SVG; allow the optimizer to serve them.
     dangerouslyAllowSVG: true,
     contentDispositionType: "attachment",
@@ -12,18 +22,22 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "*.myshopify.com" },
     ],
   },
-  async headers() {
-    return [
-      {
-        source: "/(.*)",
-        headers: [
-          { key: "X-Content-Type-Options", value: "nosniff" },
-          { key: "X-DNS-Prefetch-Control", value: "on" },
-          { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
-        ],
-      },
-    ];
-  },
+  ...(!isGithubPages
+    ? {
+        async headers() {
+          return [
+            {
+              source: "/(.*)",
+              headers: [
+                { key: "X-Content-Type-Options", value: "nosniff" },
+                { key: "X-DNS-Prefetch-Control", value: "on" },
+                { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+              ],
+            },
+          ];
+        },
+      }
+    : {}),
 };
 
 export default nextConfig;

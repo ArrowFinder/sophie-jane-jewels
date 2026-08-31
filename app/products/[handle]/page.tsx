@@ -18,7 +18,8 @@ export const revalidate = 3600;
 type Params = { handle: string };
 
 export async function generateStaticParams() {
-  const products = await getProducts({ first: 250, availability: "available" });
+  const first = process.env.GITHUB_PAGES === "true" ? 120 : 250;
+  const products = await getProducts({ first, availability: "available" });
   return products.map((p) => ({ handle: p.handle }));
 }
 

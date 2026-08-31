@@ -19,7 +19,8 @@ type Params = { handle: string };
 
 export async function generateStaticParams() {
   const { products } = await getArchiveProducts();
-  return products.map((p) => ({ handle: p.handle }));
+  const list = process.env.GITHUB_PAGES === "true" ? products.slice(0, 48) : products;
+  return list.map((p) => ({ handle: p.handle }));
 }
 
 export async function generateMetadata({
