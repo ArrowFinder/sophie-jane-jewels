@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import { Container } from "@/components/ui/container";
-import { PageHero } from "@/components/sections/page-hero";
+import { CollectionHero } from "@/components/collection/collection-hero";
 import { ButtonLink } from "@/components/ui/button";
 import { BreadcrumbJsonLd, JsonLd } from "@/components/seo/json-ld";
 import { ArchiveCatalog } from "@/components/archive/archive-catalog";
@@ -63,12 +63,22 @@ export default async function ArchivePage() {
         }}
       />
 
-      <PageHero
-        eyebrow="Previously Sold"
-        title="The Archive"
-        intro="Every piece Sophie has placed — still here to be found. Search for a Victorian gold and sapphire ring from 1850, a Georgian diamond, an Art Deco engagement ring: if it passed through her hands, the record lives in this archive. Similar jewels are often waiting in the shop."
+      <CollectionHero
+        handle="archive"
+        collection={{
+          id: "archive",
+          handle: "archive",
+          title: "The Archive",
+          description: archiveIndexDescription(),
+          seo: { title: archiveIndexTitle(), description: archiveIndexDescription() },
+          updatedAt: "",
+          eyebrow: "Previously Sold",
+          intro:
+            "Every piece Sophie has placed — still here to be found. If it passed through her hands, the record lives here.",
+        }}
+        products={products}
         breadcrumbs={breadcrumbs}
-        size="compact"
+        count={products.length}
       />
 
       <section className="py-10 lg:py-14">

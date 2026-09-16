@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Mulish, Courier_Prime } from "next/font/google";
+import { Cormorant_Garamond, Nunito_Sans } from "next/font/google";
 import "./globals.css";
 import { siteConfig } from "@/lib/site";
 import { assetPath } from "@/lib/assets";
@@ -10,26 +10,22 @@ import { Footer } from "@/components/layout/footer";
 import { ScrollReveal } from "@/components/ui/scroll-reveal";
 import { OrganizationJsonLd, WebSiteJsonLd } from "@/components/seo/json-ld";
 
+/** Web-safe stand-in for ED Checa (brand display / logo font). */
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
   variable: "--font-cormorant",
   display: "swap",
-  weight: ["300", "400", "500", "600"],
+  weight: ["300", "400", "500", "600", "700"],
   style: ["normal", "italic"],
 });
 
-const mulish = Mulish({
+/** Web-safe stand-in for Avenir (UI, body, CTAs). */
+const nunito = Nunito_Sans({
   subsets: ["latin"],
-  variable: "--font-mulish",
+  variable: "--font-nunito",
   display: "swap",
   weight: ["300", "400", "500", "600", "700"],
-});
-
-const courier = Courier_Prime({
-  subsets: ["latin"],
-  variable: "--font-courier",
-  display: "swap",
-  weight: ["400", "700"],
+  style: ["normal", "italic"],
 });
 
 export const metadata: Metadata = {
@@ -85,8 +81,11 @@ export const metadata: Metadata = {
     googleBot: { index: true, follow: true, "max-image-preview": "large" },
   },
   icons: {
-    icon: [{ url: assetPath("/icon.svg"), type: "image/svg+xml" }],
-    apple: assetPath("/icon.svg"),
+    icon: [
+      { url: assetPath("/icon.png"), type: "image/png", sizes: "32x32" },
+      { url: assetPath("/icon-192.png"), type: "image/png", sizes: "192x192" },
+    ],
+    apple: assetPath("/apple-icon.png"),
   },
 };
 
@@ -94,7 +93,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${cormorant.variable} ${mulish.variable} ${courier.variable} h-full antialiased`}
+      className={`${cormorant.variable} ${nunito.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col bg-paper">
         <CartProvider>

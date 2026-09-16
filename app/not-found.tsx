@@ -6,7 +6,7 @@ import { LogoMark } from "@/components/layout/logo";
 export default function NotFound() {
   return (
     <Container className="flex min-h-[70vh] flex-col items-center justify-center py-24 text-center">
-      <LogoMark size={52} />
+      <LogoMark size={52} home />
       <p className="eyebrow mt-6">Error 404</p>
       <h1 className="display-xl mt-4 max-w-2xl text-balance">
         This piece seems to have found another home.

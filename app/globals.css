@@ -1,43 +1,55 @@
 @import "tailwindcss";
 
 /*
-  Sophie Jane Jewels — Design System v2
-  Elevated, modern-editorial. Deco-serif display, quiet neutrals, brand color
-  used as punctuation. Reference feel: Retrouvaí / Marrow Fine.
+  Sophie Jane Jewels — Design System
+  Aligned to Brand Guidelines (February 2026).
+
+  Typography substitutes (web-safe / Google Fonts):
+  - ED Checa  → Cormorant Garamond (display / headlines)
+  - Avenir    → Nunito Sans (UI, body, CTAs, spaced labels)
+
+  Palette: official HEX from Brand Guidelines p.22
 */
 
 @theme {
-  /* Brand palette — exact brand hex, used sparingly as accents */
-  --color-oxblood: #681c25;
-  --color-oxblood-deep: #4c141b;
-  --color-rose: #d79c9d;
-  --color-rose-soft: #e8caca;
-  --color-rose-wash: #f3e2e1;
-  --color-terracotta: #d46a31;
-  --color-gold: #e9c476;
-  --color-gold-soft: #f2ddaf;
+  /* Official brand colors */
+  --color-garnet: #a15c5c;
+  --color-garnet-deep: #634542; /* Estate Mahogany */
+  --color-sienna: #875622; /* Burnished Sienna */
+  --color-gold: #e3c482; /* Sunlit Dune */
+  --color-gold-soft: #c29461; /* Adobe Gold */
+  --color-blush: #dea3a3; /* Sedona Blush */
+  --color-cameo: #bf8282; /* Desert Cameo */
+  --color-bronze: #4d2b05; /* Obsidian Bronze */
+  --color-sage: #c1cfb8; /* Sage Patina */
+  --color-rose-veil: #e0baba; /* Rose Quartz Veil */
+  --color-linen: #d6b594; /* Antique Linen */
+  --color-ivory: #efe8dc; /* Ivory Relic */
 
-  /* Warm, airy neutrals — showroom plaster / marble */
-  --color-paper: #f6efe6;
-  --color-paper-deep: #efe3d4;
-  --color-paper-dark: #e4d4c2;
-  --color-blush: #f3e4de;
-  --color-ink: #2a2320;
-  --color-ink-soft: #6d6259;
-  --color-ink-faint: #a89c8f;
-  --color-line: #e6ddce;
-  --color-line-strong: #d4c6b2;
+  /* Semantic aliases used across the site */
+  --color-oxblood: var(--color-garnet);
+  --color-oxblood-deep: var(--color-garnet-deep);
+  --color-rose: var(--color-cameo);
+  --color-rose-soft: var(--color-blush);
+  --color-rose-wash: var(--color-rose-veil);
+  --color-terracotta: var(--color-sienna);
+  --color-paper: var(--color-ivory);
+  --color-paper-deep: #e8dfd0;
+  --color-paper-dark: var(--color-linen);
+  --color-ink: var(--color-bronze);
+  --color-ink-soft: #7a6550;
+  --color-ink-faint: #a8927a;
+  --color-line: #e4d9c8;
+  --color-line-strong: #d4c3ab;
 
   --color-background: var(--color-paper);
   --color-foreground: var(--color-ink);
 
-  /* Typography */
   --font-display: var(--font-cormorant), "Times New Roman", Georgia, serif;
-  --font-sans: var(--font-mulish), ui-sans-serif, system-ui, sans-serif;
-  --font-mono: var(--font-courier), "Courier New", monospace;
+  --font-sans: var(--font-nunito), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-nunito), ui-sans-serif, system-ui, sans-serif;
 
-  /* Editorial rhythm */
-  --spacing-section: clamp(3rem, 5.5vw, 6.5rem);
+  --spacing-section: clamp(3.5rem, 6vw, 7rem);
 
   --ease-editorial: cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -68,15 +80,15 @@
     background-color: var(--color-paper);
     color: var(--color-ink);
     font-family: var(--font-sans);
-    font-weight: 350;
+    font-weight: 400;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     line-height: 1.65;
-    letter-spacing: 0.005em;
+    letter-spacing: 0.01em;
   }
 
   ::selection {
-    background-color: var(--color-oxblood);
+    background-color: var(--color-garnet);
     color: var(--color-paper);
   }
 
@@ -92,7 +104,7 @@
   }
 
   :focus-visible {
-    outline: 1.5px solid var(--color-oxblood);
+    outline: 1.5px solid var(--color-garnet);
     outline-offset: 3px;
   }
 
@@ -102,7 +114,6 @@
 }
 
 @layer components {
-  /* --- Display type: elegant, high-contrast deco serif --- */
   .display-hero {
     font-family: var(--font-display);
     font-size: clamp(3rem, 9vw, 8.5rem);
@@ -139,14 +150,14 @@
     font-weight: 500;
   }
 
-  /* --- Micro labels: typewriter mono, per brand deck --- */
+  /* Spaced caps — Avenir-style labels per brand guidelines */
   .eyebrow {
-    font-family: var(--font-mono);
+    font-family: var(--font-sans);
     font-size: 0.7rem;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 0.28em;
     text-transform: uppercase;
-    color: var(--color-oxblood);
+    color: var(--color-garnet);
   }
 
   .eyebrow-muted {
@@ -154,8 +165,9 @@
   }
 
   .meta {
-    font-family: var(--font-mono);
+    font-family: var(--font-sans);
     font-size: 0.68rem;
+    font-weight: 500;
     letter-spacing: 0.18em;
     text-transform: uppercase;
     color: var(--color-ink-faint);
@@ -163,12 +175,11 @@
 
   .lede {
     font-size: clamp(1.05rem, 1.4vw, 1.3rem);
-    line-height: 1.62;
+    line-height: 1.7;
     color: var(--color-ink-soft);
-    font-weight: 350;
+    font-weight: 400;
   }
 
-  /* Nav / UI label */
   .nav-label {
     font-family: var(--font-sans);
     font-size: 0.72rem;
@@ -227,8 +238,27 @@
     scrollbar-width: none;
   }
 
-  /* Showroom-inspired arched photography frame */
   .frame-arch {
     border-radius: 999px 999px 8px 8px;
+  }
+
+  @keyframes keep-alive {
+    from {
+      transform: scale(1) translate3d(0, 0, 0);
+    }
+    to {
+      transform: scale(1.07) translate3d(-1.25%, -0.8%, 0);
+    }
+  }
+
+  .keep-alive {
+    animation: keep-alive 22s var(--ease-editorial) alternate infinite;
+    will-change: transform;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .keep-alive {
+      animation: none;
+    }
   }
 }

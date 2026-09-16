@@ -56,7 +56,7 @@ export function CartDrawer() {
 
         {items.length === 0 ? (
           <div className="flex flex-1 flex-col items-center justify-center gap-5 px-8 text-center">
-            <LogoMark size={44} />
+            <LogoMark size={44} home />
             <p className="display-md">Your bag is empty</p>
             <p className="text-sm text-ink-soft">
               Every piece is one of a kind. When something catches your eye, it won&rsquo;t wait

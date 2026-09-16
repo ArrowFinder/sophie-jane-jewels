@@ -1,10 +1,10 @@
 import { Image } from "@/components/ui/image";
 import { ButtonLink } from "@/components/ui/button";
-import { OfficialStamp } from "@/components/brand/official-mark";
+import { LogoMark } from "@/components/layout/logo";
 
 export function Hero() {
   return (
-    <section className="relative flex min-h-[70svh] items-end overflow-hidden bg-ink text-paper sm:min-h-[78svh] lg:min-h-[calc(100svh-132px)] lg:items-center">
+    <section className="relative flex min-h-[70svh] items-end overflow-hidden bg-ink text-paper sm:min-h-[78svh] lg:min-h-[calc(100svh-128px)] lg:items-center">
       <Image
         src="/photos/hero-desert.png"
         alt="Sophie Jane Jewels — antique gold jewelry worn at golden hour in the California desert"
@@ -17,7 +17,7 @@ export function Hero() {
       <div className="absolute inset-0 hidden bg-gradient-to-r from-ink/55 via-ink/15 to-transparent lg:block" />
 
       <div className="relative z-10 mx-auto flex w-full max-w-[100rem] flex-col items-center px-6 py-12 text-center sm:px-8 sm:py-16 lg:items-start lg:px-12 lg:py-20 lg:text-left">
-        <OfficialStamp size={44} className="drop-shadow-md" />
+        <LogoMark size={40} home priority />
         <h1 className="mt-7 max-w-xl font-display text-[2.15rem] font-medium tracking-tight text-balance sm:text-5xl lg:text-[3.4rem]">
           New Arrivals
         </h1>

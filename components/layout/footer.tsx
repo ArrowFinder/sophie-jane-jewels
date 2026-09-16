@@ -2,8 +2,7 @@ import Link from "next/link";
 import { footerNav, siteConfig } from "@/lib/site";
 import { NewsletterForm } from "./newsletter-form";
 import { InstagramIcon, PinterestIcon } from "@/components/ui/icons";
-import { LogoMark } from "./logo";
-import { OfficialLockup } from "@/components/brand/official-mark";
+import { LogoLockup, LogoMark } from "./logo";
 
 export function Footer() {
   return (
@@ -11,7 +10,7 @@ export function Footer() {
       <div className="mx-auto max-w-[100rem] px-5 py-16 sm:px-8 lg:px-12 lg:py-20">
         <div className="grid gap-12 lg:grid-cols-[1.4fr_2fr]">
           <div className="max-w-md">
-            <OfficialLockup tone="cream" size="lg" />
+            <LogoLockup tone="light" />
             <h2 className="mt-8 font-display text-3xl leading-tight">
               Keep an eye on what&rsquo;s new.
             </h2>
@@ -66,7 +65,7 @@ export function Footer() {
         </div>
 
         <div className="mt-16 flex flex-col items-center border-t border-paper/15 pt-10">
-          <LogoMark size={56} />
+          <LogoMark size={56} home tone="light" />
         </div>
 
         <div className="mt-8 flex flex-col gap-4 text-xs text-paper/55 sm:flex-row sm:items-center sm:justify-between">

@@ -55,7 +55,7 @@ export function Header() {
             scrolled && "shadow-[0_10px_28px_-18px_rgba(36,27,22,0.45)]",
           )}
         >
-          <div className="mx-auto grid h-[4.5rem] max-w-[100rem] grid-cols-[1fr_auto_1fr] items-center px-5 sm:px-8 lg:h-24 lg:px-12">
+          <div className="mx-auto grid h-[4.75rem] max-w-[100rem] grid-cols-[1fr_auto_1fr] items-center px-5 sm:px-8 lg:h-[5.75rem] lg:px-12">
             {/* Left: desktop nav / mobile menu */}
             <div className="flex items-center">
               <button
@@ -185,7 +185,7 @@ export function Header() {
         </header>
       </div>
 
-      <div aria-hidden className="h-[108px] lg:h-[132px]" />
+      <div aria-hidden className="h-[112px] lg:h-[128px]" />
 
       <MobileNav open={mobileOpen} onClose={() => setMobileOpen(false)} />
       <SearchOverlay open={searchOpen} onClose={() => setSearchOpen(false)} />

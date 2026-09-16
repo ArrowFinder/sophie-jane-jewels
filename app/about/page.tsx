@@ -3,7 +3,7 @@ import { Image } from "@/components/ui/image";
 import { Container } from "@/components/ui/container";
 import { EditorialSplit } from "@/components/sections/editorial-split";
 import { ConciergeCta } from "@/components/sections/concierge-cta";
-import { Sparkle, SparkleRule } from "@/components/brand/marks";
+import { BrandIcon } from "@/components/brand/brand-icon";
 import { BreadcrumbJsonLd, JsonLd } from "@/components/seo/json-ld";
 import { siteConfig } from "@/lib/site";
 
@@ -18,30 +18,37 @@ const pillars = [
   {
     title: "Heritage",
     body: "Rooted in antique, vintage and estate traditions — with generational expertise behind every find.",
+    icon: "rose",
   },
   {
     title: "Rarity",
     body: "Unique, one-of-a-kind treasures that can't be replicated or mass-produced.",
+    icon: "ring-1",
   },
   {
     title: "Storytelling",
     body: "Each piece carries history, love and legacy. We tell it honestly — and never invent what isn't there.",
+    icon: "hand-1",
   },
   {
     title: "Luxury",
     body: "Fine craftsmanship, prestigious houses and the quiet prestige of a piece that has already lived a life.",
+    icon: "necklace",
   },
   {
     title: "Sustainability",
     body: "The most eco-conscious jewel is the one that already exists. Pre-owned, given new life.",
+    icon: "leaf-1",
   },
   {
     title: "Discovery",
     body: "The thrill of collecting rare and beautiful finds — and the pleasure of placing them with the right person.",
+    icon: "sun",
   },
   {
     title: "Trust",
-    body: "Exceptional service and expertise, so every client feels guided, valued and inspired.",
+    body: "Exceptional service and expertise guiding informed decisions — so every client feels guided, valued, and inspired.",
+    icon: "moon",
   },
 ];
 
@@ -105,7 +112,7 @@ export default function AboutPage() {
       <section className="border-y border-line bg-blush py-[var(--spacing-section)]">
         <Container size="narrow" className="text-center">
           <p className="eyebrow">Brand Values</p>
-          <SparkleRule className="mt-6" />
+          <BrandIcon name="star" tone="garnet" size={16} className="mx-auto mt-6" />
           <p className="display-md mx-auto mt-8 max-w-2xl text-balance font-display italic leading-snug text-ink">
             At Sophie Jane Jewels, we believe jewelry is more than adornment — it is
             heritage, artistry, and story woven into each piece.
@@ -129,7 +136,7 @@ export default function AboutPage() {
           <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
             {pillars.map((pillar, i) => (
               <div key={pillar.title} className="reveal" style={{ transitionDelay: `${i * 60}ms` }}>
-                <Sparkle size={14} className="text-gold" />
+                <BrandIcon name={pillar.icon} tone="garnet" size={36} />
                 <h3 className="mt-4 font-display text-xl italic leading-tight">{pillar.title}</h3>
                 <p className="mt-3 leading-relaxed text-ink-soft">{pillar.body}</p>
               </div>

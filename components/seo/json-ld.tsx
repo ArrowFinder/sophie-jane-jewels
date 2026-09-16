@@ -22,7 +22,7 @@ export function OrganizationJsonLd() {
         description: siteConfig.description,
         url: siteConfig.url,
         email: siteConfig.email,
-        image: `${siteConfig.url}/brand/logo-stamp-square.png`,
+        image: `${siteConfig.url}/brand/logo-stamp.png`,
         areaServed: "US",
         priceRange: "$$$",
         founder: { "@type": "Person", name: siteConfig.founder },
@@ -170,7 +170,7 @@ export function ArticleJsonLd({
         publisher: {
           "@type": "Organization",
           name: siteConfig.name,
-          logo: { "@type": "ImageObject", url: `${siteConfig.url}/brand/logo-stamp-square.png` },
+          logo: { "@type": "ImageObject", url: `${siteConfig.url}/brand/logo-stamp.png` },
         },
         image: image.startsWith("http") ? image : `${siteConfig.url}${image}`,
         mainEntityOfPage: `${siteConfig.url}/journal/${slug}`,

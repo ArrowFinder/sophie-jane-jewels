@@ -29,6 +29,7 @@ type BaseProps = {
 function classesFor(variant: Variant, size: Size, className?: string) {
   return cn(
     "inline-flex items-center justify-center gap-2 font-sans font-medium uppercase transition-all duration-500 cursor-pointer disabled:cursor-not-allowed disabled:opacity-50",
+    variant !== "link" && "rounded-full",
     variant !== "link" && sizes[size],
     variants[variant],
     className,

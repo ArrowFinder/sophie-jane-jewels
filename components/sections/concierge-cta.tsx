@@ -1,7 +1,7 @@
 import { Image } from "@/components/ui/image";
 import { ButtonLink } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
-import { Sparkle } from "@/components/brand/marks";
+import { LogoMark } from "@/components/layout/logo";
 
 export function ConciergeCta() {
   return (
@@ -15,7 +15,7 @@ export function ConciergeCta() {
       />
       <div className="absolute inset-0 bg-oxblood/55" />
       <Container className="relative z-10 py-14 text-center lg:py-20">
-        <Sparkle size={14} className="mx-auto text-gold" />
+        <LogoMark size={36} home tone="light" className="mx-auto" />
         <p className="eyebrow mt-5 text-gold">Find Your Piece</p>
         <h2 className="display-xl mx-auto mt-5 max-w-3xl text-balance">
           Not sure where to begin?

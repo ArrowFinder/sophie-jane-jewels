@@ -3,7 +3,7 @@ import { Suspense } from "react";
 import Link from "next/link";
 import { notFound, permanentRedirect } from "next/navigation";
 import { Container } from "@/components/ui/container";
-import { PageHero } from "@/components/sections/page-hero";
+import { CollectionHero } from "@/components/collection/collection-hero";
 import { CollectionCatalog } from "@/components/collection/collection-catalog";
 import { BreadcrumbJsonLd, JsonLd } from "@/components/seo/json-ld";
 import { getCollection, getCollections, getCollectionProducts } from "@/lib/shopify";
@@ -109,12 +109,12 @@ export default async function CollectionPage({ params }: { params: Promise<Param
         }}
       />
 
-      <PageHero
-        eyebrow={collection.eyebrow ?? "The Collection"}
-        title={collection.title}
-        intro={collection.intro ?? collection.description}
+      <CollectionHero
+        handle={handle}
+        collection={collection}
+        products={products}
         breadcrumbs={breadcrumbs}
-        size="compact"
+        count={products.length}
       />
 
       <section className="py-10 lg:py-14">
@@ -124,15 +124,6 @@ export default async function CollectionPage({ params }: { params: Promise<Param
           </Suspense>
         </Container>
       </section>
-
-      {collection.intro && (
-        <section className="border-t border-line bg-paper-deep/30 py-14">
-          <Container size="narrow" className="text-center">
-            <p className="eyebrow eyebrow-muted">About This Collection</p>
-            <p className="lede mt-4">{collection.intro}</p>
-          </Container>
-        </section>
-      )}
 
       {/* Internal linking for discovery + SEO */}
       <section className="border-t border-line py-14">
