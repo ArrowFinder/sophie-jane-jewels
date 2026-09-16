@@ -6,7 +6,7 @@ import { Image } from "@/components/ui/image";
 import { usePathname } from "next/navigation";
 import { mainNav } from "@/lib/site";
 import { useCart } from "@/components/cart/cart-provider";
-import { Logo } from "./logo";
+import { LogoMark } from "./logo";
 import { MobileNav } from "./mobile-nav";
 import { SearchOverlay } from "./search-overlay";
 import { BagIcon, MenuIcon, SearchIcon, ArrowUpRight } from "@/components/ui/icons";
@@ -55,9 +55,9 @@ export function Header() {
             scrolled && "shadow-[0_10px_28px_-18px_rgba(36,27,22,0.45)]",
           )}
         >
-          <div className="mx-auto grid h-[4.75rem] max-w-[100rem] grid-cols-[1fr_auto_1fr] items-center px-5 sm:px-8 lg:h-[5.75rem] lg:px-12">
-            {/* Left: desktop nav / mobile menu */}
-            <div className="flex items-center">
+          <div className="mx-auto flex h-14 max-w-[100rem] items-center justify-between gap-4 px-5 sm:px-8 lg:h-16 lg:px-12">
+            {/* Left: stamp home mark + nav */}
+            <div className="flex min-w-0 items-center gap-4 lg:gap-7">
               <button
                 onClick={() => setMobileOpen(true)}
                 aria-label="Open menu"
@@ -65,6 +65,8 @@ export function Header() {
               >
                 <MenuIcon width={22} height={22} />
               </button>
+              <LogoMark size={36} home priority className="shrink-0 sm:hidden" />
+              <LogoMark size={42} home priority className="hidden shrink-0 sm:block" />
               <nav className="hidden items-center gap-5 lg:flex xl:gap-7" aria-label="Primary">
                 {mainNav.map((item) => (
                   <div
@@ -86,11 +88,6 @@ export function Header() {
                   </div>
                 ))}
               </nav>
-            </div>
-
-            {/* Center: logo */}
-            <div className="flex justify-center">
-              <Logo priority />
             </div>
 
             {/* Right: actions */}
@@ -185,7 +182,7 @@ export function Header() {
         </header>
       </div>
 
-      <div aria-hidden className="h-[112px] lg:h-[128px]" />
+      <div aria-hidden className="h-[92px] lg:h-[100px]" />
 
       <MobileNav open={mobileOpen} onClose={() => setMobileOpen(false)} />
       <SearchOverlay open={searchOpen} onClose={() => setSearchOpen(false)} />

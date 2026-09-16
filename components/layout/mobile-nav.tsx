@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { mainNav } from "@/lib/site";
 import { CloseIcon, ChevronDown } from "@/components/ui/icons";
-import { Logo } from "./logo";
+import { LogoMark } from "./logo";
 import { cn } from "@/lib/utils";
 
 export function MobileNav({ open, onClose }: { open: boolean; onClose: () => void }) {
@@ -32,7 +32,7 @@ export function MobileNav({ open, onClose }: { open: boolean; onClose: () => voi
         )}
       >
         <div className="flex items-center justify-between border-b border-line px-5 py-4">
-          <Logo compact />
+          <LogoMark size={40} home />
           <button onClick={onClose} aria-label="Close menu" className="text-ink-soft hover:text-ink">
             <CloseIcon />
           </button>
