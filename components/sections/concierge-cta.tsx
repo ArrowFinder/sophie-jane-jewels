@@ -22,8 +22,8 @@ export function ConciergeCta() {
           <br />
           <span className="display-italic">Let&rsquo;s find it together.</span>
         </h2>
-        <p className="mx-auto mt-5 max-w-xl text-lg font-light leading-relaxed text-paper/85">
-          Tell Sophie what you love — an era, an occasion, a feeling — and she&rsquo;ll
+        <p className="mx-auto mt-5 max-w-xl font-display text-lg font-normal leading-snug text-paper/85">
+          Tell Sophie what you love: an era, an occasion, a feeling. Then she&rsquo;ll
           hand-select pieces made for you. Complimentary, personal, and the closest
           thing to shopping the salon.
         </p>

@@ -129,7 +129,7 @@ export default async function ArchivePiecePage({ params }: { params: Promise<Par
             <h1 className="display-lg mt-3">{product.title}</h1>
             <p className="mt-4 inline-flex items-center gap-2 text-sm uppercase tracking-[0.16em] text-terracotta">
               <DiamondMark width={13} height={13} />
-              Sold — one of a kind
+              Sold, one of a kind
             </p>
 
             <p className="mt-6 leading-relaxed text-ink-soft">{product.description}</p>
@@ -154,7 +154,7 @@ export default async function ArchivePiecePage({ params }: { params: Promise<Par
               </ButtonLink>
             </div>
             <p className="mt-4 text-sm text-ink-soft">
-              This jewel has a new home. The archive keeps the record so you can still find it —
+              This jewel has a new home. The archive keeps the record so you can still find it,
               and so Sophie can look for the next one like it.
             </p>
 
@@ -178,7 +178,7 @@ export default async function ArchivePiecePage({ params }: { params: Promise<Par
                     title: "Why the archive exists",
                     content: (
                       <p>
-                        One-of-a-kind jewelry disappears from the shop the day it sells — but not
+                        One-of-a-kind jewelry disappears from the shop the day it sells, but not
                         from memory, and not from search. Sophie keeps every placed piece here so
                         collectors, researchers and the next wearer can still find it, and so she
                         can source what comes after.

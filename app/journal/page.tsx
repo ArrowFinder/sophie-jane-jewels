@@ -12,9 +12,9 @@ import { cn } from "@/lib/utils";
 export const dynamic = "force-static";
 
 export const metadata: Metadata = {
-  title: "The Journal — Antique Jewelry Guides & Stories",
+  title: "The Journal. Antique Jewelry Guides & Stories",
   description:
-    "Guides, stories and education on antique and vintage jewelry — from diamond cuts and eras to caring for heirloom pieces. Curated by Sophie Jane.",
+    "Guides, stories and education on antique and vintage jewelry, from diamond cuts and eras to caring for heirloom pieces. Curated by Sophie Jane.",
   alternates: { canonical: "/journal" },
 };
 
@@ -33,7 +33,7 @@ export default async function JournalPage({
 }) {
   const { topic } = await searchParams;
   const articles = getArticlesByTopic(topic);
-  const [featured, ...rest] = articles;
+  const [featured...rest] = articles;
   const breadcrumbs = [
     { name: "Home", href: "/" },
     { name: "The Journal", href: "/journal" },
@@ -45,7 +45,7 @@ export default async function JournalPage({
       <PageHero
         eyebrow="Stories & Guides"
         title="The Journal"
-        intro="A field guide and a love letter — the history behind the pieces, and everything you need to buy antique and vintage jewelry with confidence."
+        intro="A field guide and a love letter, the history behind the pieces, and everything you need to buy antique and vintage jewelry with confidence."
         breadcrumbs={breadcrumbs}
       />
 
@@ -72,7 +72,7 @@ export default async function JournalPage({
         </div>
 
         {articles.length === 0 ? (
-          <p className="py-16 text-center text-ink-soft">No stories here yet — check back soon.</p>
+          <p className="py-16 text-center text-ink-soft">No stories here yet. Check back soon.</p>
         ) : (
           <>
             {/* Featured */}

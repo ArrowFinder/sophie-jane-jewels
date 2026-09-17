@@ -126,7 +126,7 @@ export default async function ProductPage({ params }: { params: Promise<Params> 
             </p>
             {product.tags.includes("one-of-a-kind") && product.availableForSale && (
               <p className="mt-2 inline-flex items-center gap-2 text-xs uppercase tracking-[0.16em] text-terracotta">
-                <DiamondMark width={13} height={13} /> One of a kind — only one available
+                <DiamondMark width={13} height={13} /> One of a kind, only one available
               </p>
             )}
 
@@ -166,7 +166,7 @@ export default async function ProductPage({ params }: { params: Promise<Params> 
                     content: (
                       <p>
                         Every piece is examined, dated and authenticated before it joins the
-                        collection — hallmarks, construction and stones are all assessed by hand.{" "}
+                        collection. Hallmarks, construction and stones are all assessed by hand.{" "}
                         <Link href="/journal/how-we-authenticate" className="link-underline text-oxblood">
                           Read how we vet each piece
                         </Link>

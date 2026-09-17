@@ -18,7 +18,7 @@ export function NewsletterForm() {
   if (done) {
     return (
       <p className="text-sm text-paper/80">
-        Thank you — you&rsquo;re on the list. Watch your inbox for first looks at new arrivals.
+        Thank you. You&rsquo;re on the list. Watch your inbox for first looks at new arrivals.
       </p>
     );
   }

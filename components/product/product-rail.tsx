@@ -3,7 +3,7 @@ import { ProductCard } from "./product-card";
 
 /**
  * Horizontal, scroll-snapping product rail. Editorial on desktop, swipeable on
- * mobile — no JS required.
+ * mobile, no JS required.
  */
 export function ProductRail({ products }: { products: Product[] }) {
   return (

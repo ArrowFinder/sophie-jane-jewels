@@ -1,5 +1,5 @@
 /**
- * The Journal — editorial + educational content. This is a core SEO surface
+ * The Journal, editorial + educational content. This is a core SEO surface
  * (era/stone/material guides, buying education, stories behind pieces) and the
  * clearest expression of Sophie's expertise. In production this could be
  * sourced from a CMS or Shopify blog; here it lives as structured content.
@@ -60,17 +60,17 @@ export const articles: Article[] = [
       { type: "h2", text: "Antique means 100 years or older" },
       {
         type: "p",
-        text: "Strictly speaking, a piece is antique once it passes the century mark. In practice, that means Georgian, Victorian, Art Nouveau and Edwardian jewelry — pieces made in a world before mass production, almost entirely by hand. You can feel it in the slightly irregular cuts, the hand-pierced galleries, the warmth of high-karat gold.",
+        text: "Strictly speaking, a piece is antique once it passes the century mark. In practice, that means Georgian, Victorian, Art Nouveau and Edwardian jewelry, pieces made in a world before mass production, almost entirely by hand. You can feel it in the slightly irregular cuts, the hand-pierced galleries, the warmth of high-karat gold.",
       },
       { type: "h2", text: "Vintage covers most of the 20th century" },
       {
         type: "p",
-        text: "Vintage is the softer term. It generally describes pieces at least twenty to thirty years old — Art Deco, Retro, mid-century and the color-drenched jewelry of the 1970s. Vintage is where a lot of collectors begin: the design is extraordinary, and prices are often more approachable than true antiques.",
+        text: "Vintage is the softer term. It generally describes pieces at least twenty to thirty years old. Art Deco, Retro, mid-century and the color-drenched jewelry of the 1970s. Vintage is where a lot of collectors begin: the design is extraordinary, and prices are often more approachable than true antiques.",
       },
       { type: "h2", text: "Estate simply means previously owned" },
       {
         type: "p",
-        text: "Estate is the term that trips people up. It doesn't refer to an age at all — it just means a piece has had a previous owner. An estate ring could be antique, vintage or nearly new. When we describe something as estate, we're telling you it has already lived one life and is ready for the next.",
+        text: "Estate is the term that trips people up. It doesn't refer to an age at all. It just means a piece has had a previous owner. An estate ring could be antique, vintage or nearly new. When we describe something as estate, we're telling you it has already lived one life and is ready for the next.",
       },
       {
         type: "quote",
@@ -78,7 +78,7 @@ export const articles: Article[] = [
       },
       {
         type: "p",
-        text: "When in doubt, ask about the specifics: the era, the karat, the cut of the stones. A good dealer will always tell you exactly what you're looking at — and why it's special.",
+        text: "When in doubt, ask about the specifics: the era, the karat, the cut of the stones. A good dealer will always tell you exactly what you're looking at, and why it's special.",
       },
     ],
   },
@@ -86,7 +86,7 @@ export const articles: Article[] = [
     slug: "guide-to-diamond-cuts-old-mine-old-european",
     title: "A Field Guide to Antique Diamond Cuts",
     excerpt:
-      "Old mine, old European, rose cut — why century-old diamonds glow differently, and how to recognize each one.",
+      "Old mine, old European, rose cut: why century-old diamonds glow differently, and how to recognize each one.",
     topic: "guides",
     topicLabel: "Guides",
     heroArt: "journal-02",
@@ -94,25 +94,25 @@ export const articles: Article[] = [
     date: "2026-08-05",
     author: "Sophie Jane",
     seoDescription:
-      "Learn to recognize antique diamond cuts — old mine, old European and rose cut — and understand why they sparkle differently from modern brilliants.",
+      "Learn to recognize antique diamond cuts, old mine, old European and rose cut, and understand why they sparkle differently from modern brilliants.",
     relatedProducts: ["victorian-old-mine-diamond-cluster-ring", "edwardian-diamond-solitaire-ring"],
     relatedCollections: ["antique-jewelry"],
     body: [
       {
         type: "p",
-        text: "Modern diamonds are cut by machine to scatter as much light as possible. Antique diamonds were cut by hand, by candlelight, to do something subtler — to glow. Once you learn to see the difference, you can't unsee it.",
+        text: "Modern diamonds are cut by machine to scatter as much light as possible. Antique diamonds were cut by hand, by candlelight, to do something subtler: to glow. Once you learn to see the difference, you can't unsee it.",
       },
-      { type: "h2", text: "Rose cut (17th–19th century)" },
+      { type: "h2", text: "Rose cut (17th, 19th century)" },
       {
         type: "p",
-        text: "The oldest cut you'll commonly encounter. A flat base rises to a dome of triangular facets — like an unopened rosebud. Rose cuts don't sparkle so much as shimmer, which is exactly why they were beloved in candlelit rooms.",
+        text: "The oldest cut you'll commonly encounter. A flat base rises to a dome of triangular facets, like an unopened rosebud. Rose cuts don't sparkle so much as shimmer, which is exactly why they were beloved in candlelit rooms.",
       },
-      { type: "h2", text: "Old mine cut (18th–19th century)" },
+      { type: "h2", text: "Old mine cut (18th, 19th century)" },
       {
         type: "p",
         text: "Chunky, cushion-shaped and full of character, with a high crown and a small flat facet on top (the culet). Old mine cuts have a warm, blocky flash that reads as unmistakably antique.",
       },
-      { type: "h2", text: "Old European cut (late 19th–early 20th century)" },
+      { type: "h2", text: "Old European cut (late 19th, early 20th century)" },
       {
         type: "p",
         text: "The direct ancestor of the modern round brilliant, but rounder in feel and softer in light return. Old Europeans have a beautiful 'crushed ice' glow and are the classic choice for an antique engagement ring.",
@@ -140,7 +140,7 @@ export const articles: Article[] = [
     body: [
       {
         type: "p",
-        text: "Collectors talk about the color of antique gold the way wine people talk about terroir. There's a reason. Older gold really does look different — softer, warmer, a touch pink or green depending on the era and origin.",
+        text: "Collectors talk about the color of antique gold the way wine people talk about terroir. There's a reason. Older gold really does look different: softer, warmer, a touch pink or green depending on the era and origin.",
       },
       { type: "h2", text: "It often starts with a higher karat" },
       {
@@ -150,7 +150,7 @@ export const articles: Article[] = [
       { type: "h2", text: "And it ends with the alloy" },
       {
         type: "p",
-        text: "The metals mixed with gold — copper for warmth, silver for coolness — were hand-measured in small workshops, batch by batch. That variability is exactly what gives antique gold its living, hand-made color.",
+        text: "The metals mixed with gold (copper for warmth, silver for coolness) were hand-measured in small workshops, batch by batch. That variability is exactly what gives antique gold its living, hand-made color.",
       },
       {
         type: "list",
@@ -184,7 +184,7 @@ export const articles: Article[] = [
         type: "list",
         items: [
           "Hallmarks and maker's marks are read and dated against reference archives.",
-          "Construction is examined under magnification — hand-fabrication tells a very different story than casting.",
+          "Construction is examined under magnification. Hand-fabrication tells a very different story than casting.",
           "Stones are assessed for cut, era-appropriateness and condition.",
           "Provenance is documented wherever it exists, and never invented where it doesn't.",
           "Anything requiring conservation is handled by specialist antique jewelers, never over-restored.",
@@ -218,7 +218,7 @@ export const articles: Article[] = [
       {
         type: "list",
         items: [
-          "Put jewelry on last — after perfume, lotion and hairspray.",
+          "Put jewelry on last, after perfume, lotion and hairspray.",
           "Take rings off before gardening, cleaning or the gym.",
           "Store pieces separately so they can't scratch one another.",
           "Keep foil-back and closed-set stones away from water; the foil can be damaged by moisture.",
@@ -227,7 +227,7 @@ export const articles: Article[] = [
       { type: "h2", text: "Cleaning" },
       {
         type: "p",
-        text: "For most pieces, a soft brush and warm (not hot) soapy water is plenty. Avoid ultrasonic cleaners entirely for antique and foiled stones — they can loosen old settings and destroy foil backings.",
+        text: "For most pieces, a soft brush and warm (not hot) soapy water is plenty. Avoid ultrasonic cleaners entirely for antique and foiled stones. They can loosen old settings and destroy foil backings.",
       },
     ],
   },
@@ -243,7 +243,7 @@ export const articles: Article[] = [
     date: "2026-07-01",
     author: "Sophie Jane",
     seoDescription:
-      "Shipping, returns and client-care details for Sophie Jane Jewels — insured delivery, considered returns and complimentary services.",
+      "Shipping, returns and client-care details for Sophie Jane Jewels, insured delivery, considered returns and complimentary services.",
     body: [
       { type: "h2", text: "Shipping" },
       {
@@ -258,7 +258,7 @@ export const articles: Article[] = [
       { type: "h2", text: "A standing invitation" },
       {
         type: "p",
-        text: "If you ever have a question about a piece — before or long after you buy — write to us. We keep records on everything we sell and are always happy to talk.",
+        text: "If you ever have a question about a piece, before or long after you buy, write to us. We keep records on everything we sell and are always happy to talk.",
       },
     ],
   },
@@ -266,7 +266,7 @@ export const articles: Article[] = [
     slug: "ring-sizing-guide",
     title: "Finding Your Ring Size (and Resizing Antiques)",
     excerpt:
-      "How to measure at home, and what can — and can't — be safely resized in an antique ring.",
+      "How to measure at home, and what can and can't be safely resized in an antique ring.",
     topic: "guides",
     topicLabel: "Guides",
     heroArt: "journal-02",
@@ -280,7 +280,7 @@ export const articles: Article[] = [
       { type: "h2", text: "Measuring at home" },
       {
         type: "p",
-        text: "Wrap a strip of paper around the base of your finger, mark where it overlaps, and measure the length in millimeters. That circumference maps directly to a US ring size — write to us with the number and we'll confirm it.",
+        text: "Wrap a strip of paper around the base of your finger, mark where it overlaps, and measure the length in millimeters. That circumference maps directly to a US ring size. Write to us with the number and we'll confirm it.",
       },
       { type: "h2", text: "What can be resized" },
       {

@@ -95,7 +95,7 @@ export function SearchPageClient() {
                     ) : null}
                   </p>
                   <p className="mb-8 max-w-xl text-sm text-ink-faint">
-                    These pieces have sold. They remain here so you can find them — and so Sophie
+                    These pieces have sold. They remain here so you can find them, and so Sophie
                     can look for the next one like them.{" "}
                     <Link href="/archive" className="link-underline text-oxblood">
                       Browse the full archive
@@ -110,7 +110,7 @@ export function SearchPageClient() {
             <div className="flex flex-col items-center gap-5 py-16 text-center">
               <p className="display-md">No pieces match “{query}”.</p>
               <p className="max-w-md text-ink-soft">
-                Search the shop and the archive — or try an era, a stone, or a year. If it has
+                Search the shop and the archive, or try an era, a stone, or a year. If it has
                 passed through Sophie&rsquo;s hands, it may still live in the archive.
               </p>
               <div className="flex flex-col gap-3 sm:flex-row">

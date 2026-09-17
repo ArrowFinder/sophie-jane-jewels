@@ -12,9 +12,9 @@ import type { Collection } from "@/lib/shopify/types";
 export const revalidate = 3600;
 
 export const metadata: Metadata = {
-  title: "Collections — Antique & Vintage Jewelry",
+  title: "Collections. Antique & Vintage Jewelry",
   description:
-    "Explore every collection at Sophie Jane Jewels — new arrivals, one-of-a-kind pieces, antique and vintage jewelry, antique gold, and jewelry by type.",
+    "Explore every collection at Sophie Jane Jewels, new arrivals, one-of-a-kind pieces, antique and vintage jewelry, antique gold, and jewelry by type.",
   alternates: { canonical: "/collections" },
 };
 
@@ -66,7 +66,7 @@ export default async function CollectionsIndexPage() {
       <PageHero
         eyebrow="Explore"
         title="Collections"
-        intro="Every piece is chosen individually — so the collections are simply doorways in. Start with what's new, what's rare, or the pieces Sophie loves most right now."
+        intro="Every piece is chosen individually, so the collections are simply doorways in. Start with what's new, what's rare, or the pieces Sophie loves most right now."
         breadcrumbs={breadcrumbs}
         size="compact"
       />
@@ -103,7 +103,7 @@ export default async function CollectionsIndexPage() {
           <p className="eyebrow">Previously Sold</p>
           <h2 className="display-md mt-3">The Archive</h2>
           <p className="lede mx-auto mt-4 max-w-xl">
-            Pieces that have already found their person — kept so they can still be found,
+            Pieces that have already found their person, kept so they can still be found,
             and so Sophie can source what comes next.
           </p>
           <div className="mt-8">

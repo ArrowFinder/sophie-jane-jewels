@@ -8,7 +8,7 @@ import { BreadcrumbJsonLd, JsonLd } from "@/components/seo/json-ld";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "About Sophie — The Eye Behind the Collection",
+  title: "About Sophie: The Eye Behind the Collection",
   description:
     "Meet Sophie Jane, founder and curator of Sophie Jane Jewels. Since 2001 she has sourced rare antique, vintage and estate jewelry with history and meaning.",
   alternates: { canonical: "/about" },
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 const pillars = [
   {
     title: "Heritage",
-    body: "Rooted in antique, vintage and estate traditions — with generational expertise behind every find.",
+    body: "Rooted in antique, vintage and estate traditions, with generational expertise behind every find.",
     icon: "rose",
   },
   {
@@ -27,7 +27,7 @@ const pillars = [
   },
   {
     title: "Storytelling",
-    body: "Each piece carries history, love and legacy. We tell it honestly — and never invent what isn't there.",
+    body: "Each piece carries history, love and legacy. We tell it honestly, and never invent what isn't there.",
     icon: "hand-1",
   },
   {
@@ -42,12 +42,12 @@ const pillars = [
   },
   {
     title: "Discovery",
-    body: "The thrill of collecting rare and beautiful finds — and the pleasure of placing them with the right person.",
+    body: "The thrill of collecting rare and beautiful finds, and the pleasure of placing them with the right person.",
     icon: "sun",
   },
   {
     title: "Trust",
-    body: "Exceptional service and expertise guiding informed decisions — so every client feels guided, valued, and inspired.",
+    body: "Exceptional service and expertise guiding informed decisions, so every client feels guided, valued, and inspired.",
     icon: "moon",
   },
 ];
@@ -91,7 +91,7 @@ export default function AboutPage() {
               <span className="display-italic"> But it can be trusted.</span>
             </h1>
             <p className="lede mt-6">
-              Sophie Jane has spent her life drawn to old things — the ring at the back of
+              Sophie Jane has spent her life drawn to old things: the ring at the back of
               the case, the piece no one else looked at twice. Sophie Jane Jewels is what
               happens when that instinct becomes a collection.
             </p>
@@ -114,7 +114,7 @@ export default function AboutPage() {
           <p className="eyebrow">Brand Values</p>
           <BrandIcon name="star" tone="garnet" size={16} className="mx-auto mt-6" />
           <p className="display-md mx-auto mt-8 max-w-2xl text-balance font-display italic leading-snug text-ink">
-            At Sophie Jane Jewels, we believe jewelry is more than adornment — it is
+            At Sophie Jane Jewels, we believe jewelry is more than adornment. It is
             heritage, artistry, and story woven into each piece.
           </p>
           <p className="lede mx-auto mt-6 max-w-2xl">
@@ -157,8 +157,8 @@ export default function AboutPage() {
             body={
               <>
                 <p>
-                  There&rsquo;s something about the light here — in the desert, along the
-                  coast — that suits antique gold. It&rsquo;s warm, unhurried, a little
+                  There&rsquo;s something about the light here, in the desert and along the
+                  coast, that suits antique gold. It&rsquo;s warm, unhurried, a little
                   sun-faded. History worn lightly.
                 </p>
                 <p>

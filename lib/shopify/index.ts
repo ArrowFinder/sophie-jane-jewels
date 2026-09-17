@@ -355,7 +355,7 @@ export async function getArchiveProducts(sort: SortKey = "newest"): Promise<{
   return { collection, products };
 }
 
-/** Related pieces — matched by type, then era, then shared tags. Shop PDP prefers in-stock. */
+/** Related pieces, matched by type, then era, then shared tags. Shop PDP prefers in-stock. */
 export async function getRelatedProducts(
   product: Product,
   count = 4,

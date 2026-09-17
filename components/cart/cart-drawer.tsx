@@ -149,7 +149,7 @@ export function CartDrawer() {
                 <p className="mt-4 border border-gold/60 bg-gold-soft/30 px-4 py-3 text-xs leading-relaxed text-ink-soft">
                   Checkout is powered by Shopify. Add your store credentials
                   (<code className="text-ink">SHOPIFY_STORE_DOMAIN</code>) to enable secure
-                  checkout — the bag and catalog are already wired for it.
+                  checkout. The bag and catalog are already wired for it.
                 </p>
               )}
               {checkoutState === "error" && (

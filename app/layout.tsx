@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Nunito_Sans } from "next/font/google";
+import { Nunito_Sans } from "next/font/google";
 import "./globals.css";
 import { siteConfig } from "@/lib/site";
 import { assetPath } from "@/lib/assets";
@@ -10,16 +10,7 @@ import { Footer } from "@/components/layout/footer";
 import { ScrollReveal } from "@/components/ui/scroll-reveal";
 import { OrganizationJsonLd, WebSiteJsonLd } from "@/components/seo/json-ld";
 
-/** Web-safe stand-in for ED Checa (brand display / logo font). */
-const cormorant = Cormorant_Garamond({
-  subsets: ["latin"],
-  variable: "--font-cormorant",
-  display: "swap",
-  weight: ["300", "400", "500", "600", "700"],
-  style: ["normal", "italic"],
-});
-
-/** Web-safe stand-in for Avenir (UI, body, CTAs). */
+/** Site-wide type: Nunito Sans for headlines, body, and UI. */
 const nunito = Nunito_Sans({
   subsets: ["latin"],
   variable: "--font-nunito",
@@ -31,7 +22,7 @@ const nunito = Nunito_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} — ${siteConfig.tagline}`,
+    default: `${siteConfig.name}: ${siteConfig.tagline}`,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
@@ -58,20 +49,20 @@ export const metadata: Metadata = {
     locale: siteConfig.locale,
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: `${siteConfig.name} — ${siteConfig.tagline}`,
+    title: `${siteConfig.name}: ${siteConfig.tagline}`,
     description: siteConfig.description,
     images: [
       {
         url: assetPath("/photos/hero-desert.png"),
         width: 1600,
         height: 900,
-        alt: `${siteConfig.name} — Fine Antique & Estate Jewelry`,
+        alt: `${siteConfig.name}: Fine Antique & Estate Jewelry`,
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.name} — ${siteConfig.tagline}`,
+    title: `${siteConfig.name}: ${siteConfig.tagline}`,
     description: siteConfig.description,
     images: [assetPath("/photos/hero-desert.png")],
   },
@@ -93,7 +84,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${cormorant.variable} ${nunito.variable} h-full antialiased`}
+      className={`${nunito.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col bg-paper">
         <CartProvider>

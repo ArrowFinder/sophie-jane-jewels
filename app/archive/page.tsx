@@ -74,7 +74,7 @@ export default async function ArchivePage() {
           updatedAt: "",
           eyebrow: "Previously Sold",
           intro:
-            "Every piece Sophie has placed — still here to be found. If it passed through her hands, the record lives here.",
+            "Every piece Sophie has placed is still here to be found. If it passed through her hands, the record lives here.",
         }}
         products={products}
         breadcrumbs={breadcrumbs}
@@ -90,7 +90,7 @@ export default async function ArchivePage() {
           <div className="mt-16 border-t border-line pt-12 text-center">
             <p className="eyebrow">Still looking</p>
             <h2 className="display-md mt-3 text-balance">
-              The piece you want may not be sold — it may not have arrived yet.
+              The piece you want may not be sold. It may not have arrived yet.
             </h2>
             <p className="lede mx-auto mt-4 max-w-xl">
               Tell Sophie the era, the stone, the feeling. She will watch the market the way she built this archive: one piece at a time.

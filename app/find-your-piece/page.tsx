@@ -6,16 +6,16 @@ import { BreadcrumbJsonLd } from "@/components/seo/json-ld";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Find Your Piece — Personal Jewelry Concierge",
+  title: "Find Your Piece: Personal Jewelry Concierge",
   description:
     "Tell Sophie what you're looking for and she'll personally hand-select antique and vintage pieces made for you. A complimentary, no-obligation jewelry concierge.",
   alternates: { canonical: "/find-your-piece" },
 };
 
 const steps = [
-  { n: "01", title: "Tell Sophie", body: "Share what you love — an era, an occasion, a budget, a feeling. The more, the better." },
+  { n: "01", title: "Tell Sophie", body: "Share what you love: an era, an occasion, a budget, a feeling. The more, the better." },
   { n: "02", title: "She curates", body: "Sophie hand-selects pieces from the collection and her network of dealers, chosen for you." },
-  { n: "03", title: "You decide", body: "Review your edit at your pace. No pressure, no obligation — just her eye, at your service." },
+  { n: "03", title: "You decide", body: "Review your edit at your pace. No pressure, no obligation. Just her eye, at your service." },
 ];
 
 export default function FindYourPiecePage() {
@@ -43,7 +43,7 @@ export default function FindYourPiecePage() {
             <h1 className="display-hero mt-5 text-balance">Find your piece.</h1>
             <p className="mt-6 max-w-xl text-lg font-light leading-relaxed text-paper/85">
               The best pieces rarely come from scrolling. Tell Sophie what you&rsquo;re after and
-              she&rsquo;ll do what she does best — find the one that&rsquo;s unmistakably yours. It&rsquo;s
+              she&rsquo;ll do what she does best: find the one that&rsquo;s unmistakably yours. It&rsquo;s
               complimentary, personal, and the closest thing to shopping her collection in person.
             </p>
           </div>

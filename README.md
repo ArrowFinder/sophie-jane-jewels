@@ -1,6 +1,6 @@
 # Sophie Jane Jewels
 
-A premium, editorial ecommerce experience for **Sophie Jane Jewels** — curated antique, vintage, estate and one-of-a-kind jewelry. Built to feel like a beautifully curated collection inside a modern California editorial world, with Shopify as the commerce backend.
+A premium, editorial ecommerce experience for **Sophie Jane Jewels** , curated antique, vintage, estate and one-of-a-kind jewelry. Built to feel like a beautifully curated collection inside a modern California editorial world, with Shopify as the commerce backend.
 
 Built with **Next.js 16 (App Router)**, **React 19**, **TypeScript**, and **Tailwind CSS v4**.
 
@@ -72,7 +72,7 @@ Optional collections to add in Shopify (they 404 until they exist): `one-of-a-ki
 
 ### 4. Archive / sold pieces
 
-Keep sold products **published**, inventory **0**, and in **Sold Archives** (`sold-archives`). Do not unpublish them — unpublished pieces cannot be indexed. Tag `sold` when possible.
+Keep sold products **published**, inventory **0**, and in **Sold Archives** (`sold-archives`). Do not unpublish them , unpublished pieces cannot be indexed. Tag `sold` when possible.
 
 ### 5. Curatorial metafields (optional)
 
@@ -110,7 +110,7 @@ Server-rendered throughout, with the Metadata API (titles, descriptions, canonic
 ## Design system
 
 - **Type:** Fraunces (antique-warmth display serif) + Jost (mid-century geometric sans)
-- **Palette:** oxblood `#691C25`, dusty rose `#D79C9D`, desert terracotta `#D46A31`, sand gold `#E9C476` over warm paper neutrals — used intentionally and sparingly.
+- **Palette:** oxblood `#691C25`, dusty rose `#D79C9D`, desert terracotta `#D46A31`, sand gold `#E9C476` over warm paper neutrals , used intentionally and sparingly.
 - Tokens live in `app/globals.css` (`@theme`).
 
 ## Art placeholders

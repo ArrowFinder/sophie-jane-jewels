@@ -41,7 +41,7 @@ export function Logo({
   return (
     <Link
       href="/"
-      aria-label="Sophie Jane Jewels — home"
+      aria-label="Sophie Jane Jewels, home"
       className={cn("inline-flex items-center justify-center", className)}
     >
       {/* Mobile / compact: simplified horizontal wordmark */}
@@ -61,7 +61,7 @@ export function Logo({
       {!compact && (
         <Image
           src={horizontal.src}
-          alt="Sophie Jane Jewels — Fine Antique & Estate Jewelry"
+          alt="Sophie Jane Jewels: Fine Antique & Estate Jewelry"
           width={horizontal.width}
           height={horizontal.height}
           priority={priority}
@@ -73,7 +73,7 @@ export function Logo({
   );
 }
 
-/** Full primary lockup — footer, about, marketing moments. */
+/** Full primary lockup, footer, about, marketing moments. */
 export function LogoLockup({
   className,
   priority = false,
@@ -87,7 +87,7 @@ export function LogoLockup({
   return (
     <Image
       src={asset.src}
-      alt="Sophie Jane Jewels — Fine Antique & Estate Jewelry, Est. 2001"
+      alt="Sophie Jane Jewels: Fine Antique & Estate Jewelry, Est. 2001"
       width={asset.width}
       height={asset.height}
       priority={priority}
@@ -98,7 +98,7 @@ export function LogoLockup({
 }
 
 /**
- * Oval stamp brand mark — favicon-scale punctuation.
+ * Oval stamp brand mark, favicon-scale punctuation.
  * Pass `home` to link to /. Prefer light tone on dark backgrounds.
  */
 export function LogoMark({
@@ -133,7 +133,7 @@ export function LogoMark({
   return (
     <Link
       href="/"
-      aria-label="Sophie Jane Jewels — home"
+      aria-label="Sophie Jane Jewels, home"
       className="inline-block transition-opacity hover:opacity-80"
     >
       {mark}

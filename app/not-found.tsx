@@ -12,7 +12,7 @@ export default function NotFound() {
         This piece seems to have found another home.
       </h1>
       <p className="lede mx-auto mt-5 max-w-md">
-        The page you&rsquo;re looking for isn&rsquo;t here — but the collection is always changing.
+        The page you&rsquo;re looking for isn&rsquo;t here, but the collection is always changing.
         Let&rsquo;s find you something with a little more history.
       </p>
       <div className="mt-9 flex flex-col gap-3 sm:flex-row">

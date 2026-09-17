@@ -85,7 +85,7 @@ export function ProductActions({ product }: { product: Product }) {
         className="w-full sm:w-auto sm:min-w-72"
         disabled={soldOut}
       >
-        {soldOut ? "Sold — One of a Kind" : added ? "Added to Bag ✓" : "Add to Bag"}
+        {soldOut ? "Sold · One of a Kind" : added ? "Added to Bag ✓" : "Add to Bag"}
       </Button>
 
       {soldOut && (

@@ -68,7 +68,7 @@ export function CollectionHero({
           <p className="eyebrow">{collection.eyebrow ?? "The Collection"}</p>
           <h1 className="display-xl mt-3 max-w-[15ch] text-balance">{collection.title}</h1>
           <span className="mt-6 block h-px w-10 bg-gold" aria-hidden />
-          {copy && <p className="mt-6 max-w-[28rem] text-[1.05rem] font-light leading-[1.7] text-ink-soft">{copy}</p>}
+          {copy && <p className="lede mt-6 max-w-[28rem]">{copy}</p>}
           <p className="meta mt-8">
             {count} {count === 1 ? "piece" : "pieces"}
           </p>

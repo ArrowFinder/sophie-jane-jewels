@@ -132,13 +132,13 @@ try {
   if (archive.collection) {
     console.log(`\nArchive collection: ${archive.collection.title}`);
     for (const { node } of archive.collection.products.edges) {
-      console.log(`  ${node.availableForSale ? "still listed as for sale" : "sold"} — ${node.title}`);
+      console.log(`  ${node.availableForSale ? "still listed as for sale" : "sold"} , ${node.title}`);
     }
   } else {
     console.log("\n✗ Collection handle sold-archives is not visible to the Storefront API.");
   }
 
-  console.log("\nOK — restart `npm run dev` so Next.js picks up .env.local.");
+  console.log("\nOK , restart `npm run dev` so Next.js picks up .env.local.");
 } catch (err) {
   console.error("\nShopify ping failed:");
   console.error(`  ${err instanceof Error ? err.message : err}`);

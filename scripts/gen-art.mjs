@@ -129,7 +129,7 @@ for (let i = 1; i <= 6; i++) {
   add(`journal-0${i}`, { w: 1200, h: 900, palette: journalPals[i - 1], angle: 120 + i * 6 });
 }
 
-// Product placeholders — square, motif-varied, palette-cycled
+// Product placeholders , square, motif-varied, palette-cycled
 const prodMotifs = ["ring", "pendant", "earring", "bracelet", "stone"];
 const prodPals = ["sand", "gold", "bloom", "desert", "sage", "sky"];
 for (let i = 1; i <= 24; i++) {

@@ -55,7 +55,7 @@ export default async function HomePage() {
           <SectionHeading
             eyebrow="Just In"
             title="New Arrivals"
-            intro="Freshly sourced and researched. Most pieces are singular — the newest finds rarely last long."
+            intro="Freshly sourced and researched. Most pieces are singular. The newest finds rarely last long."
             link={{ label: "Shop All New", href: "/collections/new-arrivals" }}
             className="reveal mb-8"
           />
@@ -80,7 +80,7 @@ export default async function HomePage() {
           <SectionHeading
             eyebrow="Chosen by Eye"
             title="Sophie's Picks"
-            intro="A shortlist of the pieces she cannot stop thinking about — chosen for character, not price."
+            intro="A shortlist of the pieces she cannot stop thinking about, chosen for character, not price."
             link={{ label: "See All Picks", href: "/collections/sophies-picks" }}
             className="reveal mb-8"
           />
@@ -93,7 +93,7 @@ export default async function HomePage() {
           <SectionHeading
             eyebrow="Previously Sold"
             title="The Archive"
-            intro="Twenty-five years of one-of-a-kind jewels, kept so they can still be found — and so the next piece can be sourced with the same eye."
+            intro="Twenty-five years of one-of-a-kind jewels, kept so they can still be found, and so the next piece can be sourced with the same eye."
             link={{ label: "Browse the Archive", href: "/archive" }}
             className="reveal mb-8"
           />

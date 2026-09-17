@@ -9,9 +9,9 @@ const categories = ["Ring", "Necklace", "Earrings", "Bracelet", "Not sure yet"];
 const eras = ["Georgian", "Victorian", "Art Nouveau", "Edwardian", "Art Deco", "Retro", "Mid-Century", "No preference"];
 const budgets = [
   "Under $2,000",
-  "$2,000 – $5,000",
-  "$5,000 – $10,000",
-  "$10,000 – $15,000",
+  "$2,000: $5,000",
+  "$5,000: $10,000",
+  "$10,000: $15,000",
   "Open / not sure",
 ];
 
@@ -41,7 +41,7 @@ export function InquiryForm() {
     return (
       <div className="flex flex-col items-center gap-5 border border-line bg-paper-deep/30 px-8 py-16 text-center">
         <DiamondMark width={34} height={34} className="text-terracotta" />
-        <h2 className="display-md">Thank you — your note is on its way to Sophie.</h2>
+        <h2 className="display-md">Thank you. Your note is on its way to Sophie.</h2>
         <p className="max-w-md text-ink-soft">
           She personally reads every inquiry and will be in touch within one to two business days,
           often with a few pieces already in mind. In the meantime, feel free to keep exploring the

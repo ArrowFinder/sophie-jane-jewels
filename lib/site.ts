@@ -1,5 +1,5 @@
 /**
- * Central site configuration — single source of truth for brand metadata,
+ * Central site configuration, single source of truth for brand metadata,
  * navigation architecture, and SEO defaults.
  */
 
@@ -14,7 +14,7 @@ export const siteConfig = {
   tagline: "Fine Antique & Estate Jewelry",
   curatorLine: "Antique & vintage jewelry, chosen by eye.",
   description:
-    "Fine antique, vintage and estate jewelry — rare, one-of-a-kind treasures with history and meaning, curated in Los Angeles by Sophie Jane since 2001.",
+    "Fine antique, vintage and estate jewelry. Rare, one-of-a-kind treasures with history and meaning, curated in Los Angeles by Sophie Jane since 2001.",
   email: "hello@sophiejanejewels.com",
   phone: "",
   founder: "Sophie Jane",
@@ -53,7 +53,7 @@ export type NavItem = {
 };
 
 /**
- * Primary navigation — an intentional, curated architecture rather than a
+ * Primary navigation, an intentional, curated architecture rather than a
  * dump of every collection. Shop is organized by the way collectors actually
  * browse: what's new, what's rare, by type, and by Sophie's own eye.
  */

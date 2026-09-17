@@ -1,7 +1,7 @@
 import { siteConfig } from "@/lib/site";
 import type { Product } from "@/lib/shopify/types";
 
-/** Renders a JSON-LD script tag. Server component — no client JS. */
+/** Renders a JSON-LD script tag. Server component, no client JS. */
 export function JsonLd({ data }: { data: Record<string, unknown> }) {
   return (
     <script

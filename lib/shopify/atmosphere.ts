@@ -1,6 +1,6 @@
 import { toSiteHandle } from "./handles";
 
-/** Lifestyle frames used in the shop strip / mega menu — preferred over generic collection art. */
+/** Lifestyle frames used in the shop strip / mega menu, preferred over generic collection art. */
 const atmosphereByHandle: Record<string, string> = {
   rings: "/photos/shop-rings.png",
   "vintage-antique-rings": "/photos/shop-rings.png",

@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 import { Sparkle } from "@/components/brand/marks";
 
-/** Official oval stamp — palm, S, gold sparkle. Vector so it never pixelates. */
+/** Official oval stamp, palm, S, gold sparkle. Vector so it never pixelates. */
 export function OfficialStamp({
   className,
   size = 48,
@@ -41,7 +41,7 @@ export function OfficialStamp({
   );
 }
 
-/** Official lockup as live type — stays sharp at any size. */
+/** Official lockup as live type, stays sharp at any size. */
 export function OfficialLockup({
   className,
   tone = "brand",
@@ -78,7 +78,7 @@ export function OfficialLockup({
     <span
       className={cn("flex flex-col items-center leading-none", className)}
       role="img"
-      aria-label="Sophie Jane Jewels — Fine Antique & Estate Jewelry, Est. 2001"
+      aria-label="Sophie Jane Jewels: Fine Antique & Estate Jewelry, Est. 2001"
     >
       <span className={cn("font-sans uppercase", gold, sizes.est)}>Est. 2001</span>
       <span className={cn("mt-1.5 font-display font-medium uppercase", word, sizes.name)}>
